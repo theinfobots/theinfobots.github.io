@@ -9,3 +9,9 @@ h3 {
 p{
    font-style: italic;
 }
+
+.header {
+   text-align: center;
+}
+
+.content{}
