@@ -19,5 +19,5 @@ while True:
         break
     else:
         break
-        print("Skriva y or n.")
+        print("write y or n.")
         
