@@ -2,7 +2,7 @@ while True:
     V = "0.1.3"
     print("Version:" + V + " / Welcome!")
     yes_no = input("Run this program? (y/n):")
-    if yes_no == "Nn":
+    if yes_no == "n":
         print("OK, Well done..")
         break
     elif yes_no == "y":
