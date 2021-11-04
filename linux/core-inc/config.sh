@@ -28,6 +28,6 @@ export COLOR_LIGHT_CYAN='\e[1;36m'
 export COLOR_LIGHT_GRAY='\e[0;37m'
 export COLOR_WHITE='\e[1;37m'
 
-export V='2.4.1'
+export V='1.2.5'
 
 user_log=$(logname)
