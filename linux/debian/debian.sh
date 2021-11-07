@@ -294,7 +294,7 @@ echo -e ${RESET_ALL}
 	amd;
         firewall;
         grub;
-
+	rm $0
         echo -e "Congratulations! Now your debian system is correctly installed."
         echo -e "\n  All done, Thanks for using this $0 script!"
 
