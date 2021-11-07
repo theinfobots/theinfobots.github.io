@@ -18,3 +18,8 @@ p{
 .content{
 
 }
+
+.small{
+   color: gray;
+   font-size: x-small;
+}
