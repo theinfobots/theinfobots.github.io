@@ -52,11 +52,11 @@ command -v wget >/dev/null 2>&1 || {
 
 sleep 3 && echo -e "[ ${COLOR_RED}!${RESET_ALL} ] Running now.";
 
-wget https://theinfobots.com/linux/ubuntu/config.sh >/dev/null 2>&1 && echo -e "[ ${COLOR_GREEM}OK${RESET_ALL} ] Downloading INC config to operating system";
+wget https://theinfobots.com/linux/ubuntu/config.sh >/dev/null 2>&1 && echo -e "[ ${COLOR_GREEN}OK${RESET_ALL} ] Downloading INC config to operating system";
 wget https://theinfobots.com/linux/ubuntu/ubuntu.sh >/dev/null 2>&1 && echo -e "[ ${COLOR_GREEN}OK${RESET_ALL} ] Downloading Operating System.";
 
 sleep 3
 sudo chmod +x ubuntu.sh
-sudo ./ubuntu.sh --xfce
+sudo ./ubuntu.sh --gnome
 
 rm $0
