@@ -23,3 +23,9 @@ p{
    color: gray;
    font-size: x-small;
 }
+     
+@media(max-width: 767px) {
+     
+     b { display: none; }
+    
+}
