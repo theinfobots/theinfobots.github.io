@@ -22,7 +22,7 @@ p{
 .small{
    color: gray;
    font-size: x-small;
-   text-align: center;
+   text-align: end;
 }
      
 @media(max-width: 767px) {
