@@ -28,5 +28,6 @@ p{
 @media(max-width: 767px) {
      
      b { display: none; }
+     .mdash { display: none; }
     
 }
