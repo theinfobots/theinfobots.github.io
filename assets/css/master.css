@@ -31,3 +31,5 @@ p{
      .mdash { display: none; }
     
 }
+
+.mdash { font-weight: bolder; }
