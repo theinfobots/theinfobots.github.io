@@ -38,6 +38,8 @@ if [[ $Yn =~ ^[Yy] ]]; then
 
 elif [[ $Yn =~ ^[Nn] ]]; then
 	echo -e "[ - ] OK, Well done. Hi"
+	rm $0
+	rm config.sh
 	exit 1;
 
 else
