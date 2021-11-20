@@ -301,6 +301,7 @@ echo -e ${RESET_ALL}
 elif [[ $Yn =~ ^[Nn]$ ]]; then
 
         echo -e "[ ${COLOR_RED}*__*${RESET_ALL} ] OK, Have nice day."
+	rm $0
         exit 1;
 
   else
