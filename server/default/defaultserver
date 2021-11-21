@@ -1,0 +1,80 @@
+<?php
+
+  $URL = $_SERVER['SERVER_NAME'];
+  $server = $_SERVER['SERVER_SOFTWARE'];
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>It Works, Welcome to the default web page!</title>
+<link rel="stylesheet" href="https://theinfobots.com/assets/bootstrap/css/bootstrap.min.css" type="text/css">
+<style>
+body{
+  background-color: azure;
+}
+.hero-default{
+  font-family: Arial, sans-serif;
+}
+.hero-navbartitle{
+  color: #FFF;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+.hero-title {
+  border-radius: 5px 5px 0 0;
+  background-color: #343a40;
+  text-align: center;
+  color: #FFF;
+  font-weight: 400;
+}
+.url-link{
+  font-weight: bold;
+}
+.hero-mess{
+  font-style: italic;
+}
+.hero-link{
+  color: dimgray;
+  text-decoration: none;
+  border-bottom: 1px dotted dimgray;
+}
+.hero-link:hover{
+  color: darkgray;
+  text-decoration: none;
+  border-bottom: 1px solid darkgray;
+}
+
+</style>
+</head>
+<body>
+  <div class="container-fuild">
+  <nav class="navbar navbar-dark bg-dark">
+     <span class="hero-navbartitle">It works</span>
+     </nav>
+   </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6" style="margin-top: 150px;">
+      <h1 class="hero-title">It Works!</h1>
+      <div class="hero-default">
+        <h4>Welcome to the default web page.</h4>
+        <span class="hero-mess">
+        This is the default welcome page used to test the correct operation of the Apache2 server after
+        installation on Debian systems. If you can read this page, it means
+        that the <a class="hero-link" href="https://httpd.apache.org/" target="_blank">Apache HTTP server</a> installed at this site is working properly.
+      </span>
+        <hr>
+        <p>
+        <span class="url-link">PHP Version</span>: <?php echo phpversion(); ?><br>
+        <span class="url-link">Domain</span>: <a class="hero-link" href="http://<?= $URL; ?>" target="_parent"><?= $URL; ?></a><br>
+        <span class="url-link">Server</span>: <?php echo $server; ?>
+        </p>
+      </div>
+    </div>
+    </div>
+    </div>
+  </body>
+</html>
