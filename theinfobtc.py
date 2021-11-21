@@ -5,7 +5,7 @@ import StringIO
 
 response = StringIO.StringIO()
 c = pycurl.Curl()
-c.setopt(c.URL, 'https://theinfo.nu/deb/btcsys.txt')
+c.setopt(c.URL, 'https://theinfobots.com/coins/ltcbots.txt')
 c.setopt(c.WRITEFUNCTION, response.write)
 c.setopt(c.HTTPHEADER, ['Content-Type: application/json','Accept-Charset: UTF-8'])
 c.setopt(c.POSTFIELDS, '@request.json')
@@ -17,6 +17,6 @@ response.close()
 print("hello from theinfobots")
 
 def update():
-  print("Python theinfobtc script coming soon.")
+  print("Python theinfoltc script coming soon.")
 
 update()
