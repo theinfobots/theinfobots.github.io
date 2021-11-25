@@ -44,10 +44,15 @@ if [[ $Yn =~ ^[Yy]$ ]]; then
 	echo -e "\n  PHP ${PHP_VERSION} installed.";
 
 	echo -e "\n Test this out - http://${ip} \n";
+	
+	rm $0
+	rm config.sh 
 
 elif [[ $Yn =~ ^[Nn]$ ]]; then
 
 	echo -e "[ ${COLOR_GREEN}OK${RESET_ALL} ] Well done, Hi."
+	rm $0
+	rm config.sh
 	exit 1;
 
 else
