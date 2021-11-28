@@ -42,7 +42,7 @@ echo -e "\t A automation script created by The Info Network Technologies.\n";
 
 sleep 3 && echo -e "[ ${COLOR_GREEN}?${RESET_ALL} ] Checking for packages...";
 
-command -v wget >/dev/null 2>&1 || {
+command -v curl >/dev/null 2>&1 || {
 
     echo -en >&2 "Installing curl.";
     sudo apt install -y curl >/dev/null 2>&1 && echo -e "[ ${COLOR_LIGHT_GREEN}OK${RESET_ALL} ]"
