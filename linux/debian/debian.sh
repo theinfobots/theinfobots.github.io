@@ -133,10 +133,10 @@ deb_packages() {
     sudo apt install -y fonts-dejavu p7zip-full libreoffice-writer xfce4-xkb-plugin xfce4-screenshooter >/dev/null 2>&1 && echo -e "[ ${COLOR_LIGHT_GREEN}step 5 of 9 completed.${RESET_ALL} ]\n";
 
     echo -ne "  [ ${COLOR_LIGHT_GREEN}+${RESET_ALL} ] Installing 5 packages to debian xfce.";
-    sudo apt install -y xfce4-clipman fonts-droid-fallback xfce4-panel-dev debian-keyring ttf-liberation >/dev/null 2>&1 && echo -e "[ ${COLOR_LIGHT_GREEN}step 6 of 9 completed.${RESET_ALL} ]\n";
+    sudo apt install -y xfce4-clipman fonts-droid-fallback xfce4-panel-dev debian-keyring >/dev/null 2>&1 && echo -e "[ ${COLOR_LIGHT_GREEN}step 6 of 9 completed.${RESET_ALL} ]\n";
 
     echo -ne "  [ ${COLOR_LIGHT_GREEN}+${RESET_ALL} ] Installing packages to debian xfce.";
-    sudo apt install -y ttf-dejavu-extra libreoffice-calc aspell-en p7zip unzip xarchiver ttf-freefont >/dev/null 2>&1 && echo -e "[ ${COLOR_LIGHT_GREEN}step 7 of 9 completed.${RESET_ALL} ]\n";
+    sudo apt install -y ttf-dejavu-extra libreoffice-calc aspell-en p7zip unzip xarchiver >/dev/null 2>&1 && echo -e "[ ${COLOR_LIGHT_GREEN}step 7 of 9 completed.${RESET_ALL} ]\n";
 
     echo -ne "  [ ${COLOR_LIGHT_GREEN}+${RESET_ALL} ] Installing packages to debian xfce.";
     sudo apt install -y fonts-freefont-ttf ttf-mscorefonts-installer ttf-dejavu-core fonts-opensymbol ufw build-essential vlc >/dev/null 2>&1 && echo -e "[ ${COLOR_LIGHT_GREEN}step 8 of 9 completed.${RESET_ALL} ]\n";
