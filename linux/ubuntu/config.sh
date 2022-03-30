@@ -121,7 +121,7 @@ installPackages(){
 	sudo apt-get install -y ufw synaptic dconf ttf-mscorefonts-installer xserver-xorg-input-synaptics apt-xapian-index policykit-1-gnome net-tools >/dev/null 2>&1 && echo -e "[ Step 8 of 10 completed ]"
 	sleep 2
 	echo -e "[ ${COLOR_LIGHT_GREEN}+${RESET_ALL} ] Installing build-essential, vlc & more tools"
-	sudo apt-get install -y build-essential vlc ttf-dejavu-extra libreoffice-calc p7zip unzip xarchiver ttf-freefon ttf-liberation  fonts-noto-mono ttf-dejavu network-manager rar unrar >/dev/null 2>&1 && echo -e "[ Step 9 of 10  completed ]"
+	sudo apt-get install -y build-essential vlc ttf-dejavu-extra libreoffice-calc p7zip unzip xarchiver fonts-noto-mono ttf-dejavu network-manager rar unrar >/dev/null 2>&1 && echo -e "[ Step 9 of 10  completed ]"
 	sleep 2
 	echo -e "[ ${COLOR_LIGHT_GREEN}+${RESET_ALL} ] Installing fonts and more tools"
 	sudo apt-get install -y ttf-bitstream-vera fonts-freefont-ttf ttf-dejavu-core fonts-opensymbol libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi >/dev/null 2>&1 && echo -e "[ Step 10 of 10 completed ]"
