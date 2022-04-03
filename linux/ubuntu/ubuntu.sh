@@ -12,7 +12,7 @@ if [[ $1 == "--gnome" ]]; then
 
 	read -p " Run this on your ubuntu system auto config installer? (Y/n):" Yn
 
-if [[ $Yn =~ ^[Yy] ]]; then
+if [[ $Yn =~ ^[Yy]$ ]]; then
 
 	echo -e "\n\t ${COLOR_LIGHT_RED}Ubuntu installer Running now${RESET_ALL}\n\n"
 
@@ -36,7 +36,7 @@ if [[ $Yn =~ ^[Yy] ]]; then
 	rm $0
 	rm config.sh
 
-elif [[ $Yn =~ ^[Nn] ]]; then
+elif [[ $Yn =~ ^[Nn]$ ]]; then
 	echo -e "[ - ] OK, Well done. Hi"
 	rm $0
 	rm config.sh
