@@ -47,6 +47,31 @@
       </div>
     </div>
   </div>
+  <script>
+var sec = 10;
+var val; 
+
+function redirect() {
+    document.location.href = 'https://theinfobots.com';
+}
+
+function updateSec() {
+    document.getElementById("sec").innerHTML = sec;
+    sec--;
+    if (sec == -1) {
+        clearInterval(val);
+        redirect();
+    }
+}
+
+function Timer() {
+    val = setInterval(function () {
+        updateSec()
+    }, 1000);
+}
+
+Timer();
+</script>
 <script src="/assets/js/copier.js"></script>
 <script src="/assets/js/jquery.min.js"></script>
 <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
